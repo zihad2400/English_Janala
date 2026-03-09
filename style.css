@@ -148,29 +148,23 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --- Responsive Adjustments --- */
+
+/* মোবাইল ভার্সনে ডেস্কটপ বাটন হাইড থাকবে */
+#desktop-nav {
+    display: none;
+}
+
+/* লার্জ ডিভাইস (১০২৪ পিক্সেল বা তার বেশি) হলে বাটনগুলো ডান পাশে দেখাবে */
+@media screen and (min-width: 1024px) {
+    #desktop-nav {
+        display: flex !important;
+        /* জোর করে দেখানো */
+        justify-content: flex-end !important;
+        /* ডান পাশে নেওয়া */
+    }
+}
+
 
 /* For Tablet & Mobile (Standard Responsive) */
 @media (max-width: 1024px) {
@@ -265,6 +259,5 @@
 .card {
     transition: all 0.3s ease-in-out;
 }
-
 
 

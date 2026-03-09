@@ -16,34 +16,40 @@
 <body class="relative">
 
 <!-- ---------------- HEADER ---------------- -->
-<header>
-  <div class="navbar bg-base-100 shadow-sm">
+
+<header class="bg-base-100 shadow-sm">
+  <div class="navbar w-11/12 mx-auto">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> 
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /> 
           </svg>
         </div>
-        <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow-lg border">
           <li><a href="#"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
           <li><a href="#"><i class="fa-solid fa-book-open"></i> Learn</a></li>
           <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
         </ul>
       </div>
-      <a href="#" class="flex items-center gap-1"><span class="text-lg font-bold">English</span></a>
-      <img src="./assets/logo.png" alt="logo">
-      <span class="font-bangla text-lg font-semibold">জানালা</span>
+
+      <a href="#" class="flex items-center gap-2">
+        <span class="text-xl font-bold text-sky-500">English</span>
+        <img src="./assets/logo.png" alt="logo" class="w-8 h-8">
+        <span class="font-bangla text-xl font-semibold">জানালা</span>
+      </a>
     </div>
-    <div class="navbar-end hidden lg:flex">
-      <ul class="menu menu-horizontal px-1 space-x-4">
-        <li><a href="#" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
-        <li><a href="#" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</a></li>
-        <li><a href="#" class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
-      </ul>
-    </div>
+
+    <div id="desktop-nav" class="navbar-end hidden lg:flex">
+  <div class="flex items-center gap-3">
+    <a href="#" class="btn btn-outline btn-primary btn-sm md:btn-md font-medium"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+    <a href="#" class="btn btn-outline btn-primary btn-sm md:btn-md font-medium"><i class="fa-solid fa-book-open"></i> Learn</a>
+    <a href="#" class="btn btn-primary btn-sm md:btn-md text-white font-medium"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+  </div>
+</div>
   </div>
 </header>
+
 
 <!-- ---------------- HERO ---------------- -->
 <section class="flex flex-col flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto">

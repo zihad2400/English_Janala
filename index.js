@@ -244,8 +244,6 @@ loadLessons();
 
 
 
-
-
 function pronounceWord(word){
 
     const speech = new SpeechSynthesisUtterance(word);
