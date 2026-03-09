@@ -4,115 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Janala || Best Platform for Learning English</title>
-    <!-- This is FavIcon OR tittle icon and lolgo  -->
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-
-    <!-- This is Custom CSS link file  -->
-     <link rel="stylesheet" href="style.css">
-    <!-- This is font awusome cdn link  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-     <!-- This is google fonts  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-     <!-- This is Tailwind Css and DaisyUI CDN link  -->
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-     
-   
+<body class="relative">
 
-    <header>
-        <div class="navbar bg-base-100 shadow-sm">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+<!-- ---------------- HEADER ---------------- -->
+<header>
+  <div class="navbar bg-base-100 shadow-sm">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> 
+          </svg>
+        </div>
+        <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <li><a href="#"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+          <li><a href="#"><i class="fa-solid fa-book-open"></i> Learn</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+        </ul>
       </div>
-      <ul
-        tabindex="-1"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a href=""  ><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
-
-        <li><a href="" ><i class="fa-solid fa-book-open"></i>Learn</a></li>
-
-        <li><a href="" ><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
-
-    </ul>
+      <a href="#" class="flex items-center gap-1"><span class="text-lg font-bold">English</span></a>
+      <img src="./assets/logo.png" alt="logo">
+      <span class="font-bangla text-lg font-semibold">জানালা</span>
+    </div>
+    <div class="navbar-end hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 space-x-4">
+        <li><a href="#" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+        <li><a href="#" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</a></li>
+        <li><a href="#" class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
       </ul>
     </div>
-    <a href="" class="flex items-center gap-1"><span class="text-lg font-bold">English</span></a>
-    <img src="./assets/logo.png" alt="logo">
-    <span class="font-bangla text-lg font-semibold">জানালা</span>
   </div>
-  <div class="navbar-end hidden lg:flex">
-    <ul class="menu menu-horizontal px-1 space-x-4">
-        <li><a href="" class="btn btn-outline btn-primary" ><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
+</header>
 
-        <li><a href="" class="btn btn-outline btn-primary" ><i class="fa-solid fa-book-open"></i>Learn</a></li>
-
-        <li><a href="" class="btn btn-outline btn-primary" ><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
-
-    </ul>
+<!-- ---------------- HERO ---------------- -->
+<section class="flex flex-col flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto">
+  <div class="content flex-1 text-center md:text-left">
+    <h2 class="text-4xl font-bold mb-8"><span class="text-sky-400">English</span> is Easy!!</h2>
+    <p class="font-bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+    <div class="form space-y-4">
+      <input type="name" class="input" placeholder="Enter Your Name" /><br>
+      <input type="password" class="input" placeholder="Password" /><br>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
   </div>
+  <div class="image flex-1">
+      <img src="./assets/hero-student.png" alt="">
   </div>
+</section>
+
+<!-- ---------------- SEARCH BAR ---------------- -->
+<div class="w-11/12 mx-auto flex justify-center items-center gap-2 mb-5">
+    <input type="text" id="lesson-search-input" placeholder="Search word in lessons" class="input input-bordered w-96" />
+    <button id="lesson-search-btn" class="btn btn-primary">Search</button>
 </div>
-    </header>
 
+<!-- ---------------- LESSON BUTTONS ---------------- -->
+<div id="level-container" class="flex gap-5 flex-wrap justify-center mt-5"></div>
+
+<!-- ---------------- WORD CONTAINER ---------------- -->
+<section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto rounded-md my-10 grid grid-cols-3 gap-5">
+    <div class="text-center bg-sky-100 col-span-full rounded-xl py-10 space-y-6 font-bangla">
+        <p class="text-xl font-medium text-gray-400">আপনি এখনো কোন Lesson Select করেন নি</p>
+        <h2 class="font-bold text-4xl">একটি Lesson Select করুন।</h2>
+    </div>
+</section>
+
+<!-- ---------------- MODAL ---------------- -->
+<dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="details-container" class="space-y-5"></div>
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- ---------------- GLOBAL SPINNER ---------------- -->
+<div id="global-spinner" class="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50 hidden">
+  <div class="w-24 h-24 border-8 border-t-blue-500 border-r-purple-500 border-b-pink-500 border-l-green-400 rounded-full animate-spin"></div>
+</div>
+
+
+
+<!-- ---------------- FOOTER ---------------- -->
+<footer class="bg-white text-black py-10 mt-10">
+  <div class="w-11/12 mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
     
-    <section class="flex flex-col flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto">
-      <div class="content flex-1 text-center md:text-left">
-              <h2 class="text-4xl font-bold mb-8"><span class="text-sky-400">English</span> is Easy!! </h2>
-                <p class="font-bangla ">
-                  আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
-                </p>
-              
-       <div class="form space-y-4">
-        <input type="name"  class="input" placeholder="Enter Your Name" /><br>
-  <input type="password" class="input" placeholder="Password" /><br>
-  <button class="btn btn-primary">Get Started</button>
-
-       </div>
-
+    <!-- Logo & tagline -->
+    <div class="flex flex-col items-start">
+      <div class="flex items-center gap-2 mb-2">
+        <img src="./assets/logo.png" alt="logo" class="w-10 h-10">
+        <span class="font-bangla font-semibold text-lg">English জানালা</span>
       </div>
+      <p class="text-gray-500 max-w-xs">Interactive English Lessons যা আপনাকে দ্রুত এবং সহজে শেখাবে।</p>
+    </div>
 
-      <div class="image flex-1">
-          <img src="./assets/hero-student.png" alt="">
+    <!-- Quick Links -->
+    <div class="flex flex-col gap-2">
+      <h3 class="font-bold text-lg mb-2">Quick Links</h3>
+      <a href="#" class="hover:text-sky-300 transition">FAQ</a>
+      <a href="#" class="hover:text-sky-300 transition">Learn</a>
+      <a href="#" class="hover:text-sky-300 transition">Logout</a>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex flex-col gap-2">
+      <h3 class="font-bold text-lg mb-2">Follow Us</h3>
+      <div class="flex gap-3">
+        <a href="#" class="hover:text-blue-500 transition"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-sky-400 transition"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-700 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-pink-500 transition"><i class="fa-brands fa-instagram"></i></a>
       </div>
-    </section>
-     
-   
-
-
-
-<section>
-  <h2 class="text-4xl font-bold mb-8 text-center"><span class="text-sky-400">Let's</span> Learn Vocabularies</h2>
-
-  <div id="level-container" class="flex gap-5 flex-wrap justify-center">
+    </div>
 
   </div>
-</section>
 
-
-
-<section id="word-container" class="bg-gray-100 p-10  w-11/12 mx-auto rounded-md my-10">
-                
-</section>
-
-
+  <div class="mt-8 text-center text-gray-500 text-sm">
+    &copy; 2026 English জানালা. All rights reserved.
+  </div>
+</footer>
 
 
 
 
 
-
-
-
-
+<!-- ---------------- SCRIPTS ---------------- -->
 <script src="index.js"></script>
+<script src="text.js"></script>
 </body>
 </html>

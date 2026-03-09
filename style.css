@@ -4,3 +4,267 @@
 .font-bangla{
     font-family: "Hind Siliguri", sans-serif;
 }
+
+
+
+.spinner-border {
+    border: 4px solid transparent;
+    border-radius: 50%;
+    border-top-color: #1A91FF;
+    /* blue top */
+    width: 3rem;
+    height: 3rem;
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/* স্পিনার যাতে পেজ না কাঁপায় তার জন্য ফিক্সড পজিশন */
+#global-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* হালকা কালো আবছা ব্যাকগ্রাউন্ড */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* সব কিছুর উপরে থাকবে */
+}
+
+/* স্পিনারটি লুকানোর জন্য ক্লাস */
+.hidden {
+    display: none !important;
+}
+
+/* স্পিনারের এনিমেশন */
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/* ---------------- MODAL RESPONSIVE STYLES ---------------- */
+
+/* মডাল বক্সের বেসিক সাইজ এবং প্যাডিং */
+.modal-box {
+    max-width: 600px;
+    /* ডেস্কটপে সর্বোচ্চ চওড়া */
+    width: 90%;
+    /* ছোট ডিভাইসে স্ক্রিনের ৯০% জায়গা নিবে */
+    padding: 2rem;
+    border-radius: 1rem;
+    overflow-x: hidden;
+    /* কন্টেন্ট যাতে ডানে-বামে না লাফায় */
+}
+
+/* মডাল কন্টেন্টের ভেতরকার টেক্সট রেসপন্সিভ করা */
+#details-container h2 {
+    font-size: 1.5rem;
+    /* মোবাইল ডিফল্ট */
+    line-height: 1.4;
+    word-wrap: break-word;
+    /* বড় শব্দ হলে ভেঙে যাবে */
+}
+
+#details-container p {
+    font-size: 1rem;
+    color: #4b5563;
+    /* gray-600 */
+    margin-top: 5px;
+}
+
+/* সমার্থক শব্দ বা Synonyms বাটনগুলো যাতে ভেঙে নিচের লাইনে আসে */
+#details-container .btn-sm {
+    margin: 4px;
+    height: auto;
+    min-height: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+/* --- Media Queries for Specific Devices --- */
+
+/* ট্যাবলেট এবং বড় স্ক্রিনের জন্য */
+@media (min-width: 768px) {
+    #details-container h2 {
+        font-size: 2rem;
+        /* বড় স্ক্রিনে টাইটেল বড় হবে */
+    }
+
+    .modal-box {
+        width: 50%;
+        /* বড় স্ক্রিনে মডাল অর্ধেক জায়গা নিবে */
+    }
+}
+
+/* একদম ছোট মোবাইলের জন্য (iPhone SE বা ছোট ফোন) */
+@media (max-width: 380px) {
+    .modal-box {
+        padding: 1.2rem;
+        /* প্যাডিং কমিয়ে দেওয়া হয়েছে */
+        width: 95%;
+    }
+
+    #details-container h2 {
+        font-size: 1.25rem;
+    }
+
+    .modal-action .btn {
+        width: 100%;
+        /* ক্লোজ বাটনটি পুরো চওড়া হবে ক্লিক সুবিধার জন্য */
+    }
+}
+
+/* মডাল ওপেন হওয়ার এনিমেশন (স্মুথ ফিল) */
+.modal {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Responsive Adjustments --- */
+
+/* For Tablet & Mobile (Standard Responsive) */
+@media (max-width: 1024px) {
+    .navbar-end.hidden.lg\:flex {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Hero Section Adjustments */
+    section.flex-col-reverse {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    /* Search Bar Width Adjustment */
+    #lesson-search-input {
+        width: 70%;
+    }
+
+    /* Word Cards: 3 column to 1 or 2 column */
+    #word-container {
+        grid-template-cols: repeat(2, minmax(0, 1fr));
+        /* Tablet: 2 columns */
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    /* Footer adjustments */
+    footer .w-11\/12 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .flex-col {
+        align-items: center;
+    }
+}
+
+/* For Small Mobile Devices */
+@media (max-width: 480px) {
+
+    /* Word Cards: Single Column */
+    #word-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        /* Mobile: 1 column */
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    /* Search Bar full width on mobile */
+    .w-11\/12.mx-auto.flex.justify-center {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    #lesson-search-input {
+        width: 100%;
+    }
+
+    #lesson-search-btn {
+        width: 100%;
+    }
+
+    /* Buttons scaling */
+    #level-container .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    /* Modal padding for small screens */
+    .modal-box {
+        width: 95%;
+        padding: 1.5rem;
+    }
+}
+
+/* Animation smoothing for responsiveness */
+.btn,
+.input,
+.card {
+    transition: all 0.3s ease-in-out;
+}
+
+
+
